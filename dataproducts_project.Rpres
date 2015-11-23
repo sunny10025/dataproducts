@@ -1,0 +1,28 @@
+Dataproducts_Final Project
+========================================================
+author: Sunny
+date: 11/22/2015
+
+Project Description
+========================================================
+This prediction engine utilizes the MARS algorithm to predict the estimated total box office in North America on any given week of the year, based on 
+the historical box office data from 2003-2013. The other parameters which it utilizes in this prediction are:
+               
+      1) Total number of films that will be in theaters in that week.
+      2) Total number of theaters in which these films are showing. 
+      3) Total estimated production cost for all these films.
+      4) Number of Sequels in theaters that week.
+
+MARS Algorithm
+========================================================
+The algorithm used for this prediction is MARS, which gave us an R-squared of over 75%.
+
+From wikipedia:
+
+In statistics, Multivariate adaptive regression splines (MARS) is a form of regression analysis introduced by Jerome H. Friedman in 1991.[1] It is a non-parametric regression technique and can be seen as an extension of linear models that automatically models non-linearities and interactions between variables.
+
+The term "MARS" is trademarked and licensed to Salford Systems. In order to avoid trademark infringements, many open source implementations of MARS are called "Earth".[2][3]
+
+https://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines
+
+
