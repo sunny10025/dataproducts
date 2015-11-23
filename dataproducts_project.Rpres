@@ -15,7 +15,6 @@ the historical box office data from 2003-2013. The other parameters which it uti
 
 MARS Algorithm
 ========================================================
-The algorithm used for this prediction is MARS, which gave us an R-squared of over 75%.
 
 From wikipedia:
 
@@ -24,5 +23,9 @@ In statistics, Multivariate adaptive regression splines (MARS) is a form of regr
 The term "MARS" is trademarked and licensed to Salford Systems. In order to avoid trademark infringements, many open source implementations of MARS are called "Earth".[2][3]
 
 https://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines
+
+Prediction Accuracy
+========================================================
+MARS gave us an R-squared of over 75%.
 
 
