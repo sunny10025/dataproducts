@@ -24,8 +24,21 @@ The term "MARS" is trademarked and licensed to Salford Systems. In order to avoi
 
 https://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines
 
+Model Diagnosis
+========================================================
+
+```{r, echo=FALSE}
+library(earth)
+x <- read.csv("WklyGrosses.11.22.2015.csv",header=TRUE,sep=",")
+fit <- earth(log(x$WEEKLYGROSS)~., data=x, degree=2)
+plot(fit)
+```
+
 Prediction Accuracy
 ========================================================
-MARS gave us an R-squared of over 75%.
+MARS gave us an R-squared of over 79%.
 
-
+```{r, echo=FALSE}
+plot(fitted(fit),log(x$WEEKLYGROSS))
+abline(a=0,b=1,col='blue')
+```
